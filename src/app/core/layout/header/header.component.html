@@ -9,12 +9,17 @@
             <ul class="navbar-nav flex-grow-1">
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-secondary" asp-controller="Home" asp-action="Privacy" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        GENRES
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                        
-                    </ul>
+                    
+
+                    <div class="dropdown">
+                        <a class="btn btn-dark dropdown-toggle text-secondary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          GENRES
+                        </a>
+                      
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <app-genres></app-genres>
+                        </div>
+                      </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-secondary" >PRIVACY</a>

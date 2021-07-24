@@ -22,4 +22,9 @@ export class MovieService {
     return this.http.get(`${environment.apiUrl}` + 'movies/' + id)
     .pipe( map(resp => resp as Movie));
   }
+
+  getMovieByGenre(genreId: number) : Observable<Movie[]>{
+    return this.http.get(`${environment.apiUrl}` + 'movies/genre/' + genreId)
+    .pipe(map(resp => resp as Movie[]));
+  }
 }
