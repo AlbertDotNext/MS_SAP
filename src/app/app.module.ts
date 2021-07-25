@@ -21,6 +21,7 @@ import { ProfileComponent } from './user/profile/profile.component';
 import { EditProfileComponent } from './user/edit-profile/edit-profile.component';
 import { MovieDetailsComponent } from './movies/movie-details/movie-details.component';
 import { NotFoundComponent } from './shared/components/not-found/not-found.component';
+import { MovieCardListComponent } from './movies/movie-card-list/movie-card-list.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { NotFoundComponent } from './shared/components/not-found/not-found.compo
     ProfileComponent,
     EditProfileComponent,
     MovieDetailsComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    MovieCardListComponent
   ],
   imports: [
     BrowserModule,
