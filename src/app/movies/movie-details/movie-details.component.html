@@ -25,7 +25,12 @@
                 </div>
             </div>
             <div class="mb-2">
-                <span class="badge bg-warning text-dark">{{movie.rating}}</span>
+                
+                <span class="badge text-dark" [ngClass]="{
+                    'badge-warning ' : movie.rating > 8,
+                    'badge-danger ' : movie.rating < 6,
+                    'badge-primary ' : movie.rating >= 6 && movie.rating <= 8
+                }">{{movie.rating}}</span>
             </div>
             <div>
                 <p class="text-white">{{movie.overview}}</p>
