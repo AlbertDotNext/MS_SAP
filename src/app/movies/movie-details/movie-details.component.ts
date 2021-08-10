@@ -19,6 +19,7 @@ export class MovieDetailsComponent implements OnInit {
         this.id = +p.get('id')!;
         this.movieService.getMovieDetails(this.id).subscribe(m=>{
           this.movie = m;
+          
         })
 
       }

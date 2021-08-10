@@ -7,7 +7,7 @@ import { environment } from 'src/environments/environment';
 import { Movie } from 'src/app/shared/models/movie';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root'  
 })
 export class MovieService {
 
